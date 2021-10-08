@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    这是一个首页页面的
+    <button>按钮</button>    
+    <script>
+      const func = async () => {
+        return 'async'
+      }
+      document.querySelector("button").onclick = async () => {
+        const res =  await func()
+        console.log('res', res)
+      };    
+    </script>
+  </div>
+</body>
+</html>
